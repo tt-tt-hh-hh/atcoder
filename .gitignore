@@ -1,0 +1,4 @@
+.DS_Store
+git_token.txt
+venv/
+.vscode/

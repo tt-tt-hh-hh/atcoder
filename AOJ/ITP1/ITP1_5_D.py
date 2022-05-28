@@ -1,19 +1,18 @@
-#a:3で割った余りが0ならspaceとiを出力してc
-#b:10で割った余りが３ならspaceとiを出力してc
-#c:10で割った商が1ならb, 
-#d:i++してa
+BIG_NUM = 2000000000
 
-n = int(input())
 
-i = 1
+N = int(input())
+x = 0
 
-while i <= n:
+for i in range(1,N+1):
+
     if i%3 == 0:
-        print(" "+str(i), end="")
-    elif i%10 == 3:
-        print(" "+str(i), end="")   
-    elif i//10 != 0:
-        if i%10 == 3:
-            print(" "+str(i), end="")
-
-    i += 1
+            print(" %d"%i,end = "");
+    else:
+        x = i
+        while (x):
+            if x%10 == 3:
+                print(" %d"%i,end = "")
+                break
+            x //= 10
+print()
